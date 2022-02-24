@@ -1,0 +1,32 @@
+body{
+    background-color: antiquewhite;
+    color: black;
+}
+
+header{
+    margin-top: 10px;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 3em;
+    word-spacing: 10px;
+}
+
+#gameGrid{
+    margin: 10px 10px 10px 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: rgb(3, 4, 5);
+    display: grid;
+    background-color:aliceblue ;
+    grid-gap:10px;
+    justify-items: center;
+}
+
+.cell{
+    border: 10px salmon solid;
+    font-size: 2.2em;
+    background-color: rgb(12, 8, 8);
+    color: rgb(243, 233, 233);
+    display: inline-block;
+    margin: 10px;
+}
