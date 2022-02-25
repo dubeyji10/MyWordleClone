@@ -1,6 +1,7 @@
 body{
     background-color: antiquewhite;
     color: black;
+    width: max-content;
 }
 
 header{
@@ -12,21 +13,85 @@ header{
 }
 
 #gameGrid{
+    justify-items: center;
+    justify-content: center;
+    justify-self: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    /* width: max-content; */
     margin: 10px 10px 10px 10px;
     padding-top: 5px;
     padding-bottom: 5px;
     color: rgb(3, 4, 5);
     display: grid;
     background-color:aliceblue ;
-    grid-gap:10px;
-    justify-items: center;
+    grid-gap:1px;
 }
 
 .cell{
-    border: 10px salmon solid;
-    font-size: 2.2em;
+    border: 2px rgb(48, 46, 46) solid;
+    font-size: 1.1em;
     background-color: rgb(12, 8, 8);
     color: rgb(243, 233, 233);
     display: inline-block;
-    margin: 10px;
+    margin: 5px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+}:focus-visible{
+    outline: 1px salmon dashed;
 }
+
+#keyboard{
+
+    margin: 10px 10px 10px 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: rgb(3, 4, 5);
+    display: grid;
+    background-color: rgb(255 255 255);
+    grid-gap: 10px;
+    justify-items: center;
+    
+}
+
+.keys{
+    background-color: aliceblue;
+    color: black;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    /* justify-items: center; */
+    text-align: center;
+}
+
+.keys:focus {
+    outline: 2px solid black;
+  }
+  
+.keys:focus-visible {
+    outline: 4px dashed salmon;
+    background: transparent;
+  }
+
+  *:focus{
+    transition-delay:0.1s;
+    outline: 2px solid highlight;
+  }
+
+  
+  /* focus rule */
+
+  /* :focus-visible {
+    outline: -webkit-focus-ring-color auto 1px;
+    outline-color: -webkit-focus-ring-color;
+    outline-style: auto;
+    outline-width: 1px;
+} */
+
